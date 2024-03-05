@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" th:href="@{/admin.css}" />
+    <link rel="stylesheet" href="../static/admin.css" />
+  </head>
+  <body class="inter">
+    <header class="roboto-bold">
+      <h1>Admin Dashboard</h1>
+      <h4>Manage your songs and playlists</h4>
+    </header>
+
+    <div class="container inter">
+      <form action="addSong" method="post">
+        <!-- <input type="submit" class="button-52" value="ADD SONG" /> -->
+        <button class="button-52">ADD SONG</button>
+      </form>
+      <button class="button-52" onclick="location.href='viewSongs'">
+        VIEW SONGS
+      </button>
+      <button class="button-52" onclick="location.href='createPlaylists'">
+        CREATE PLAYLIST
+      </button>
+      <button class="button-52" onclick="location.href='updatePlaylist'">
+        UPDATE PLAYLIST
+      </button>
+      <button class="button-52" onclick="location.href='viewPlaylists'">
+        VIEW PLAYLISTS
+      </button>
+    </div>
+  </body>
+</html>
